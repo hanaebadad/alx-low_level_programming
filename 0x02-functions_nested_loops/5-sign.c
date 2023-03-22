@@ -1,21 +1,30 @@
-#include "main.h"
+#include"main.h"
 
 /**
- * main - check the code.
+ * print_sign - print + if n is greater than zero,
+ *             0 if n is zero and - if n is less
+ *             than zero.
  *
- * Return: Always 0.
- */
-int main(void)
+ * @n: takes integer type input for function.
+ *
+ * Return: 1 if +, 0 if 0 and -1 if -
+*/
+
+int print_sign(int n)
 {
-int r;
-r = _isalpha('H');
-_putchar(r + '0');
-r = _isalpha('o');
-_putchar(r + '0');
-r = _isalpha(108);
-_putchar(r + '0');
-r = _isalpha(';');
-_putchar(r + '0');
-_putchar('\n');
-return (0);
+	if (n > 0)
+	{
+		_putchar(43 + 0);
+		return (1);
+	}
+	else if (n == 0)
+	{
+		_putchar(0 + 48);
+		return (0);
+	}
+	else
+	{
+		_putchar(45 + 0);
+		return (-1);
+	}
 }
