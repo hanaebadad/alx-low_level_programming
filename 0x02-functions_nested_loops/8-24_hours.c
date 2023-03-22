@@ -1,5 +1,4 @@
-#include "holberton.h"
-
+#include "main.h"
 /**
  * jack_bauer - func to print all minutes in 24 hrs
  *
