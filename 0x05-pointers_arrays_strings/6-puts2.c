@@ -1,23 +1,21 @@
-#include "holberton.h"
+#include"holberton.h"
 
 /**
- * puts2 - a func to print every other number in a string
+ * puts2 - prints every character of a string
  *
- * @str: string params
+ * @str: string parameter input
  *
- * Return: void
- */
+ * Return: Noting
+*/
 
 void puts2(char *str)
 {
-	int i = 0;
-	int len = 0;
+	int i;
 
-	while (str[i++])
-
-		len++;
-
-	for (i = 0; i < len; i += 2)
-		_putchar(str[i]);
-		_putchar('\n');
+	for (i = 0; str[i] != '\0'; ++i)
+	{
+		if (i % 2 == 0)
+			_putchar(str[i]);
+	}
+	_putchar('\n');
 }
